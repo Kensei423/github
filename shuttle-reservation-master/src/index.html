@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> form 2.0 </title>
+  <script src="https://use.fontawesome.com/021876bc5b.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/default.css">
+  <link type="text/css" rel="stylesheet" href="css/default.date.css">
+  <script type="text/javascript" src="javascript/picker.js"> </script>
+
+</head>
+<body>
+
+  <div class="Nav navbar-fixed-top">
+    <nav class="navbar">
+      <ul>
+        <li> <a href=""> Contact Us </a> </li>
+        <li> <a href=""> Employment </a> </li>
+        <li> <a href="">  Links </a> </li>
+        <li> <a href=""> Reservation </a>  </li>
+        <li> <a href=""> About Us </a> </li>
+        <li> <a href=""> Home </a> </li>
+        <span id="mobileDropDown"> <i class="fa fa-bars" aria-hidden="true"></i> </span>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!--/////////////////////////////////////////////////////////////////-->
+  <!--Beginning of Form -->
+  <!--/////////////////////////////////////////////////////////////////-->
+  <form id='form' action="http://httpbin.org/post" method="POST" class="form-style-9">
+    <ul>
+
+
+
+      <li>
+
+        <!--/////////////////////////////////////////////////////////////////-->
+        <!--Location Selection -->
+        <!--/////////////////////////////////////////////////////////////////-->
+
+
+        <select id="list" name="list" name='list' class="form-style-select"  >
+          <option>From Location </option>
+          <!--<option name="Location" value="AUR"></option>
+          <option name="Location" value="CHI"> </option>
+          <option name="Location" value="DKB"></option>
+          <option name="Location" value="LMB"></option>
+          <option name="Location" value="VP"></option>
+          <option name="Location" value="WTN"> </option>-->
+        </select>
+
+
+        <select id='list2' name='list2' class="form-style-select" style="width:130px" >
+          <option> To Location </option>
+        </select>
+
+        <!--/////////////////////////////////////////////////////////////////-->
+        <!-- This is the date picker. Will bring up menu's to select date-->
+        <!--/////////////////////////////////////////////////////////////////-->
+        <li id="date-picker">
+          <span> <i class="fa fa-calendar" aria-hidden="true"> </i> </span>
+          <input
+          id="input_01"
+          class="datepicker"
+          name="date"
+          type="text"
+          autofocuss
+          value='Pick A Date' style='text-align: center'
+          data-valuee="2016-08-07"
+          style="margin-right:20px;"
+          >
+        </li>
+        <span id="list_feedback"></span>
+      </li>
+
+
+      <li>
+        <input id='name' type="text" name="name" class="field-style field-split align-left" placeholder="Full Name" required="please fill in your name"/>
+        <input id='email' type="email" name="email" class="field-style field-split align-right" placeholder="Email" required="please fill in your email" />
+
+      </li>
+
+
+
+
+      <!--/////////////////////////////////////////////////////////////////-->
+      <!--Submit Button -->
+      <!--/////////////////////////////////////////////////////////////////-->
+      <li>
+        <input style='width:200px'  id="submitButton" type="submit" value="Submit" />
+      </li>
+
+    </ul>
+  </form>
+
+
+  <!--/////////////////////////////////////////////////////////////////-->
+  <!--Javascript Files-->
+  <!--/////////////////////////////////////////////////////////////////-->
+  <section class="section">
+    <div id="container"></div>
+  </section>
+
+
+
+  <script type="text/javascript" src="javascript/picker.date.js"> </script>
+  <script type="text/javascript" src="core.js"> </script>
+  <script type="text/javascript" src="javascript/legacy.js"> </script>
+  <script type="text/javascript" src="DateTime.js"> </script>
+  <script type="text/javascript" src="javascript/dropdownOption.js"> </script>
+
+</body>
+</html>
